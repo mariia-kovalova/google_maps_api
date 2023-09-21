@@ -70,3 +70,8 @@ code {
   left: 25px;
   animation-delay: 1s;
 }
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+}
