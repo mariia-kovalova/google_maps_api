@@ -1,6 +1,6 @@
 # Google Maps Api App
 
-The prolect is created for learning purposes using
+The project is created for learning purposes using
 [Google Maps JavaScript API ](https://developers.google.com/maps/documentation/javascript/overview).
 
 ## Starting the app
