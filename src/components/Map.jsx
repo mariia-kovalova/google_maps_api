@@ -51,21 +51,21 @@ export const Map = () => {
 // };
 
 // export const Map = () => {
-//   const [userLocation, setUserLocation] = useState(null);
-//   const [destinationLocation, setDestinationLocation] = useState(null);
+//   const [location, setLocation] = useState(null);
+//   const [destination, setDestination] = useState(null);
 
 //   const options = useMemo(
 //     () => ({
 //       mapId: '5328c82c88a1caff',
 //       zoom: 10,
-//       center: userLocation || ODESA,
+//       center: location || ODESA,
 //     }),
-//     [userLocation]
+//     [location]
 //   );
 
 //   useEffect(() => {
 //     window.navigator.geolocation.getCurrentPosition(({ coords }) => {
-//       setUserLocation({
+//       setLocation({
 //         lat: coords.latitude,
 //         lng: coords.longitude,
 //       });
@@ -80,7 +80,7 @@ export const Map = () => {
 //       lng: latLng.lng(),
 //     };
 
-//     setDestinationLocation(destinationLatLang);
+//     setDestination(destinationLatLang);
 //   };
 
 //   return (
@@ -90,13 +90,13 @@ export const Map = () => {
 //       onClick={onMapClick}
 //     >
 //       <Marker
-//         position={userLocation}
+//         position={location}
 //         title="I am here"
 //         icon="https://maps.google.com/mapfiles/kml/pal2/icon10.png"
 //       />
 
-//       {destinationLocation ? (
-//         <Marker position={destinationLocation} title="I want to go here" />
+//       {destination ? (
+//         <Marker position={destination} title="I want to go here" />
 //       ) : null}
 //     </GoogleMap>
 //   );
